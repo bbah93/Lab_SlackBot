@@ -1,6 +1,6 @@
 # Twin Cities Cohort - Slack Bot Challenge 🤖
 <br>
-A [Slack bot](https://api.slack.com/bot-users) is a non-human "user" that interacts with the Slack messaging app. Bots might post messages to users or to channels, send reminders, look up information in response to a question or perform a calculation.  In this project, we'll work in teams to build bots that can preform simple interactions with the AccessCode3-3 Slack.
+A [Slack bot](https://api.slack.com/bot-users) is a non-human "user" that interacts with the Slack messaging app. Bots might post messages to users or to channels, send reminders, look up information in response to a question or perform a calculation.  In this project, we'll work in teams to build bots that can preform simple interactions with the Dream Corp Tech Slack.
 
 ![slack bot example](https://api.slack.com/img/api/guide_bot_user.png)
 
@@ -9,7 +9,7 @@ Slack offers three different APIs that developers can use to interact with their
 ## Setup
 The following setup steps only need to be completed **once per team**:
 
-1. Fork and clone [this repo](https://github.com/ramonaharrison/SlackBot). Make sure both team members are added as contributors to the forked repo.
+1. Fork and clone [this repo](https://github.com/bbah93/Lab_Slackbot). Make sure both team members are added as contributors to the forked repo.
 
 2. Go to https://accesscode3-3.slack.com/apps/new/A0F7YS25R-bots. Make sure you are signed into the AccessCode3-3 Slack team. Choose a username for your bot and click the "Add bot integration" button.
 
@@ -63,10 +63,10 @@ The following setup steps only need to be completed **once per team**:
 
 ## Resources
 - [Slack Web API docs](https://api.slack.com/web)
-- [JSON Parsing lesson plan](../lessons/json)
+- [JSON Parsing lesson plan](https://github.com/floreo-labs/Java-Core-Curriculum/tree/master/lessons/json)
 
 ## Submission
 
 1. For each feature that you work on, create a new branch in your forked SlackBot repo named `XXMMDD_FeatureName`, where `XXMMDD` are your initials and the month and day and `FeatureName` describes the feature you are working on. When you finish each feature, add, commit and push your changes. On GitHub, open a new Pull Request and assign it to your teammate to review and merge.
 
-2. This assignment is due by ***9pm on Saturday 9/18***. All code should be committed and pushed by the deadline. Each team member should complete the Google Form (check Slack!) to submit.
+2. This assignment is due by ***8am on Tuesday 4/28***. All code should be committed and pushed by the deadline. Each team member should complete the Google Form (check Slack closer to submission date!) to submit.
