@@ -40,7 +40,7 @@ The following setup steps only need to be completed **once per team**:
 4. (Optional / Bonus!) In `Slack.java`, implement the `sendMessageWithAttachments(String messageText, List<Attachment> attachments)`, which should take in a `String messageText` and a `List<Attachment> attachments` to post to the #bots channel. It should return a `SendMessageResponse`. If your bot will send messages with attachments, you must implement this method. Read https://api.slack.com/docs/message-attachments to familiarize yourself with how attachment URL parameters should be formatted.
 
 5. Respect the **bot etiquette guidelines**:
-    - Bots may only post messages to the #bots channel! No direct messages or posting to pre-existing channels like #general or #random.
+    - Bots may only post messages to the #bots-and-bits channel! No direct messages or posting to pre-existing channels like #general or #random.
     - No spamming or flooding the channel with messages: bots should post at most one or two messages at a time.
     - Keep it classroom friendly :)
 
