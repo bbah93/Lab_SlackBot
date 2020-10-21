@@ -19,8 +19,8 @@ public class Main {
         //myBot.sendMessageToBotsChannel("http://weknowyourdreams.com/images/pineapple/pineapple-07.jpg\"");
 
         // Post "Hello, world!" to the #bots channel
-        myBot.sendMessageToBotsChannel("Hello from theborg!");
-        myBot.sendMessageToBotsChannel(" https://akns-images.eonline.com/eol_images/Entire_Site/2016912/rs_1024x759-161012111018-1024.The-Borg-Star-Trek-The-Next-Generation.ms.101216.jpg");
+        myBot.sendMessageToBotsChannel("test");
+        //myBot.sendMessageToBotsChannel(" https://fitengezondnu.files.wordpress.com/2014/10/healthy-foods-for-kidneys.jpg");
 
         // Post a pineapple photo to the #bots channel
         // myBot.sendMessage("http://weknowyourdreams.com/images/pineapple/pineapple-07.jpg");
