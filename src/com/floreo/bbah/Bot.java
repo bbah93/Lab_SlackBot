@@ -11,6 +11,8 @@ public class Bot {
 
     // TODO: implement your bot logic!
 
+   // public void
+
     public Bot() {
 
     }
