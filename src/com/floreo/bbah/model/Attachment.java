@@ -28,8 +28,11 @@ public class Attachment {
     // "footer_icon"
     // "ts"
 
+
+
     public Attachment(JSONObject json) {
         // TODO: parse an attachment from the incoming json
+
     }
 
     // TODO add getters to access private fields
