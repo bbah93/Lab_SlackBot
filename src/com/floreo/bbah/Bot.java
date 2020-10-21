@@ -79,6 +79,11 @@ public class Bot {
         }
     }
 
+    public void sendMessage(String message) {
+        message = "";
+        System.out.println(message);
+    }
+
     /**
      * Sample method: deletes a message from the #bots channel. Prints a message indicating success or failure.
      *
