@@ -99,9 +99,7 @@ public class Attachment {
     public String getTitle() {
         return title;
     }
-    public String getTitle_link() {
-        return title_link;
-    }
+    public String getTitle_link() { return title_link; }
     public String getText() {
         return text;
     }
@@ -123,7 +121,5 @@ public class Attachment {
     public String getTs() {
         return ts;
     }
-
-
 
 }
