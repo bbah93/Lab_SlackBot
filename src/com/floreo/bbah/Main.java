@@ -9,11 +9,11 @@ public class Main {
         Bot myBot = new Bot();
 
         myBot.testApi();
-
         myBot.listChannels();
 
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
-
+        myBot.sendMessageToBotsChannel("Hey, what's up");
+        myBot.sendMessageToBotsChannel("Glorina is low key coding y'all"+"https://www.celebsfacts.com/wp-content/uploads/2017/07/Lauryn-Hill.jpg");
 
         // Post "Hello, world!" to the #bots channel
         //myBot.sendMessage("Hello, world!");
