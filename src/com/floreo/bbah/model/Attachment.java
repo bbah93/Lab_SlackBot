@@ -28,6 +28,8 @@ public class Attachment {
     private String footer_icon;
     private String ts;
 
+
+
     public Attachment(JSONObject json) {
         // TODO: parse an attachment from the incoming json
         if(fallback != null){
@@ -75,6 +77,7 @@ public class Attachment {
         if(ts != null) {
             this.ts = ts;
         }
+       
     }
 
     // TODO add getters to access private fields
