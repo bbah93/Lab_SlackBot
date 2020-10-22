@@ -13,7 +13,7 @@ public class Main {
         myBot.listChannels();
 
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
-
+myBot.sendMessageToBotsChannel("Hello, from theBorg!");
 
         // Post "Hello, world!" to the #bots channel
         //myBot.sendMessage("Hello, world!");
