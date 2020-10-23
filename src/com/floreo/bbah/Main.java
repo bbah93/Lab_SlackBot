@@ -18,7 +18,7 @@ public class Main {
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
 
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
-
+        myBot.sendMessageToBotsChannel("Hello from the theborg");
         myBot.sendMessageToBotsChannel("http://weknowyourdreams.com/images/pineapple/pineapple-07.jpg\"");
     
         // Post "Hello, world!" to the #bots channel
