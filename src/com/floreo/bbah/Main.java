@@ -1,33 +1,34 @@
-package com.floreo.bbah;
+package com.floreo.bbah.model;
 
-import com.floreo.bbah.model.Attachment;
-import com.floreo.bbah.model.User;
-import com.floreo.bbah.network.Slack;
 import de.ralleytn.simple.json.JSONObject;
 
-public class Main {
+/**
+ *
+ * A class representing a user.
+ * See https://api.slack.com/types/user
+ *
+ */
 
-    public static void main(String[] args) {
+public class User {
 
-        Bot myBot = new Bot();
+    // TODO: implement private fields for each of the following user JSON keys:
+    // "id"
+    // "name"
+    // "deleted"
+    // "color"
+    // "profile"
+    // "is_admin"
+    // "is_owner"
+    // "is_primary_owner"
+    // "is_restricted"
+    // "is_ultra_restricted"
+    // "has_2fa"
+    // "two_factor_type"
+    // "has_files"
 
-        myBot.testApi();
-
-        myBot.listChannels();
-
-        myBot.listMessages(Slack.BOTS_CHANNEL_ID);
-
-        myBot.listMessages(Slack.BOTS_CHANNEL_ID);
-        myBot.sendMessageToBotsChannel("Hello from the theborg");
-        myBot.sendMessageToBotsChannel("http://weknowyourdreams.com/images/pineapple/pineapple-07.jpg\"");
-    
-        // Post "Hello, world!" to the #bots channel
-
-        myBot.sendMessageToBotsChannel("Just checking from Andinet? https://www.picgifs.com/comment-gifs/f/funny/picgifs-funny-1703861.gif");
-        myBot.deleteMessageInBotsChannel("");
-        //myBot.sendMessageToBotsChannel(" https://fitengezondnu.files.wordpress.com/2014/10/healthy-foods-for-kidneys.jpg");
-
-        // Post a pineapple photo to the #bots channel
-        // myBot.sendMessage("http://weknowyourdreams.com/images/pineapple/pineapple-07.jpg");
+    public User(JSONObject json) {
+        // TODO: parse a user from the incoming json
     }
+
+    // TODO add getters to access private fields
 }
