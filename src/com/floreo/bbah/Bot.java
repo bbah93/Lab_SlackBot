@@ -1,20 +1,13 @@
 package com.floreo.bbah;
-
 import com.floreo.bbah.model.Channel;
 import com.floreo.bbah.model.Message;
 import com.floreo.bbah.network.Slack;
 import com.floreo.bbah.network.responses.*;
-
 import java.util.List;
-
 public class Bot {
-
     // TODO: implement your bot logic!
-
     public Bot() {
-
     }
-
     /**
      * Sample method: tests the Slack API. Prints a message indicating success or failure.
      */
@@ -22,16 +15,13 @@ public class Bot {
         Response apiTest = Slack.testApi();
         System.out.println("API OK: " +apiTest.isOk() + "\n");
     }
-
     /**
      * Sample method: prints all public AccessCode3-3 channel names and ids. Prints an error message on failure.
      */
     public void listChannels() {
         ListChannelsResponse listChannelsResponse = Slack.listChannels();
-
         if (listChannelsResponse.isOk()) {
             List<Channel> channels = listChannelsResponse.getChannels();
-
             System.out.println("\nChannels: ");
             for (Channel channel : channels) {
                 System.out.println("name: " + channel.getName() + ", id:" + channel.getId());
@@ -40,7 +30,6 @@ public class Bot {
             System.err.print("Error listing channels: " + listChannelsResponse.getError());
         }
     }
-
     /**
      * Sample method: prints up to the last 100 messages from a given channel. Prints an error message on failure.
      * or failure.
@@ -49,10 +38,8 @@ public class Bot {
      */
     public void listMessages(String channelId) {
         ListMessagesResponse listMessagesResponse = Slack.listMessages(channelId);
-
         if (listMessagesResponse.isOk()) {
             List<Message> messages = listMessagesResponse.getMessages();
-
             System.out.println("\nMessages: ");
             for (Message message : messages) {
                 System.out.println();
@@ -63,7 +50,6 @@ public class Bot {
             System.err.print("Error listing messages: " + listMessagesResponse.getError());
         }
     }
-
     /**
      * Sample method: sends a plain text message to the #bots channel. Prints a message indicating success or failure.
      *
@@ -71,14 +57,12 @@ public class Bot {
      */
     public void sendMessageToBotsChannel(String text) {
         SendMessageResponse sendMessageResponse = Slack.sendMessage(text);
-
         if (sendMessageResponse.isOk()) {
             System.out.println("Message sent successfully!");
         } else {
             System.err.print("Error sending message: " + sendMessageResponse.getError());
         }
     }
-
     /**
      * Sample method: deletes a message from the #bots channel. Prints a message indicating success or failure.
      *
@@ -86,7 +70,6 @@ public class Bot {
      */
     public void deleteMessageInBotsChannel(String messageTs) {
         DeleteMessageResponse deleteMessageResponse = Slack.deleteMessage(messageTs);
-
         if (deleteMessageResponse.isOk()) {
             System.out.println("Message deleted successfully!");
         } else {
